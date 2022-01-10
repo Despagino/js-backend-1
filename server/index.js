@@ -9,6 +9,11 @@ app.get("/api/users", (req, res) => {
     let friends = ["Nitin", "Eric", "Jeddy", "Cameron", "Riley"];
     res.status(200).send(friends);
   });
+
+  app.get("/api/players", (req, res) => {
+    let players = ["Lebron", "Giannis", "Luka", "Trae", "Curry"];
+    res.status(200).send(players);
+  });
   
   app.get("/weather/:temperature", (req, res) => {
     const phrase = `<h3>It was ${req.params.temperature} today</h3>`;
